@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate percentage</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+        .father{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+
+        }
+        .son{
+            background-color: teal;
+            padding: 30px;
+            border: 2px solid rgb(6, 2, 8);
+            border-radius: 10px;
+
+        }
+       label{
+        color: black;
+       }
+
+       input{
+        padding: 5px 10px;
+        font-size: 20px;
+        margin-top: 5px;
+        border: 2px black solid;
+        cursor: pointer;
+        outline: none;
+        margin-bottom: 5px;
+
+       }
+       h1{
+        margin-bottom: 20px;
+
+       }
+       h1,
+       h2{
+        text-align: center;
+        color: rgb(15, 14, 13);
+       }
+       
+       
+
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="son">
+
+            <h1>Calculate percentage(%)</h1>
+            <label for="">Enter total marks</label><br>
+            <input type="text" placeholder="Number" id="number1"><br>
+            <label for="">Enter number of subjects</label><br>
+            <input type="text" placeholder="Number" id="number2"><br>
+            <input type="submit"value="Calculate" placeholder="calc" onclick="Modkar()"><br>
+
+            <h2 id="res">Result</h2>
+        </div>
+    </div>
+    <script>
+        function Modkar(){
+            var a= parseInt(document.getElementById('number1').value);
+            var b= parseInt(document.getElementById('number2').value);
+
+            var c= a/b;
+            document.getElementById("res").innerHTML="Result=" + c + "%";
+        }
+    </script>
+</body>
+</html>
