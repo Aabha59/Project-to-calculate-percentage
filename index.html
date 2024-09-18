@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculate percentage</title>
+    <title>Document</title>
 
     <style>
         *{
@@ -13,14 +13,14 @@
             font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
         }
-        .father{
+        .Father{
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
 
         }
-        .son{
+        .Son{
             background-color: teal;
             padding: 30px;
             border: 2px solid rgb(6, 2, 8);
@@ -56,27 +56,31 @@
     </style>
 </head>
 <body>
-    <div class="father">
-        <div class="son">
+    <div class="Father">
+        <div class="Son">
 
             <h1>Calculate percentage(%)</h1>
             <label for="">Enter total marks</label><br>
             <input type="text" placeholder="Number" id="number1"><br>
             <label for="">Enter number of subjects</label><br>
             <input type="text" placeholder="Number" id="number2"><br>
-            <input type="submit"value="Calculate" placeholder="calc" onclick="Modkar()"><br>
+            <input type="submit"value="Calculate" placeholder="calc" onclick="fastfast()"><br>
 
             <h2 id="res">Result</h2>
         </div>
     </div>
+    
     <script>
-        function Modkar(){
+        function fastfast(){
+            
             var a= parseInt(document.getElementById('number1').value);
             var b= parseInt(document.getElementById('number2').value);
 
             var c= a/b;
+            
             document.getElementById("res").innerHTML="Result=" + c + "%";
         }
     </script>
+    
 </body>
 </html>
